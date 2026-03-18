@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- ============================================================
+       parcours/index.html — Parcours académique
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Parcours académique de Pierre : diplômes, formations et certifications." />
+
+  <title>Parcours académique — Portfolio de Pierre</title>
+
+  <!-- Feuille de style principale (chemin depuis la racine) -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ── Point d'injection du header ── -->
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════════
+         BANDEAU DE PAGE — Bleu, texte blanc
+         ══════════════════════════════════════════════════════════ -->
+    <section class="page-banner">
+      <div class="container">
+        <h1 class="page-banner__title">Parcours académique</h1>
+        <p class="page-banner__subtitle">Mes formations, diplômes et certifications</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         SECTION DIPLÔMES — Timeline bleue sur fond blanc
+         ══════════════════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+
+        <h2 class="section__title">Formations & Diplômes</h2>
+        <div class="section-divider"></div>
+
+        <!-- Timeline verticale avec ligne bleue -->
+        <div class="timeline">
+
+          <!-- Entrée 1 : Master -->
+          <div class="timeline__item">
+            <p class="timeline__date">2022 — 2024</p>
+            <h3 class="timeline__title">Master en Ingénierie Informatique</h3>
+            <p class="timeline__subtitle">Université de Lyon &mdash; mention Très Bien</p>
+            <p class="timeline__desc">
+              Spécialisation en développement logiciel et systèmes embarqués.
+              Mémoire de recherche sur l'optimisation des algorithmes de tri pour
+              de grands ensembles de données.
+            </p>
+            <!-- Tags des matières -->
+            <div class="tag-list">
+              <span class="tag">Algorithmique</span>
+              <span class="tag">Systèmes embarqués</span>
+              <span class="tag">IA</span>
+              <span class="tag">Réseaux</span>
+            </div>
+          </div>
+
+          <!-- Entrée 2 : Licence -->
+          <div class="timeline__item">
+            <p class="timeline__date">2019 — 2022</p>
+            <h3 class="timeline__title">Licence en Informatique</h3>
+            <p class="timeline__subtitle">Université de Lyon &mdash; mention Bien</p>
+            <p class="timeline__desc">
+              Acquisition des fondamentaux en programmation, bases de données,
+              architecture logicielle et mathématiques appliquées.
+            </p>
+            <div class="tag-list">
+              <span class="tag">C / C++</span>
+              <span class="tag">Java</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Mathématiques</span>
+            </div>
+          </div>
+
+          <!-- Entrée 3 : Baccalauréat -->
+          <div class="timeline__item">
+            <p class="timeline__date">2019</p>
+            <h3 class="timeline__title">Baccalauréat Scientifique</h3>
+            <p class="timeline__subtitle">Lycée Ampère, Lyon &mdash; mention Bien</p>
+            <p class="timeline__desc">
+              Spécialité Mathématiques et Sciences de l'Ingénieur.
+              Option Informatique et Sciences du Numérique (ISN).
+            </p>
+            <div class="tag-list">
+              <span class="tag">Mathématiques</span>
+              <span class="tag">Physique</span>
+              <span class="tag">ISN</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         SECTION CERTIFICATIONS — Fond gris clair
+         ══════════════════════════════════════════════════════════ -->
+    <section class="section section--gray">
+      <div class="container">
+
+        <h2 class="section__title">Certifications</h2>
+        <div class="section-divider"></div>
+        <p class="section__intro">Formations complémentaires et certifications professionnelles.</p>
+
+        <div class="cards-grid">
+
+          <div class="card">
+            <div class="card__accent"></div>
+            <h3 class="card__title">AWS Certified Cloud Practitioner</h3>
+            <p class="card__meta">Amazon Web Services &mdash; 2023</p>
+            <p class="card__text">
+              Certification officielle AWS sur les concepts fondamentaux du cloud computing
+              et les principaux services AWS.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card__accent"></div>
+            <h3 class="card__title">Scrum Master Certifié (PSM I)</h3>
+            <p class="card__meta">Scrum.org &mdash; 2023</p>
+            <p class="card__text">
+              Maîtrise du cadre Scrum et des pratiques agiles pour la gestion
+              de projets logiciels.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card__accent"></div>
+            <h3 class="card__title">Machine Learning — Coursera</h3>
+            <p class="card__meta">Stanford University (en ligne) &mdash; 2022</p>
+            <p class="card__text">
+              Formation complète aux algorithmes de machine learning supervisé et non supervisé,
+              réseaux de neurones et bonnes pratiques.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         SECTION LANGUES — Fond blanc
+         ══════════════════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+
+        <h2 class="section__title">Langues</h2>
+        <div class="section-divider"></div>
+
+        <div class="skills-grid" style="max-width:640px; margin:1.5rem auto 0;">
+          <div>
+            <div class="skill">
+              <div class="skill__name"><span>Français</span><span>Langue maternelle</span></div>
+              <div class="skill__bar"><div class="skill__fill" style="width:100%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__name"><span>Anglais</span><span>C1 — Courant</span></div>
+              <div class="skill__bar"><div class="skill__fill" style="width:85%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__name"><span>Espagnol</span><span>B1 — Intermédiaire</span></div>
+              <div class="skill__bar"><div class="skill__fill" style="width:55%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Point d'injection du footer ── -->
+  <div id="site-footer"></div>
+
+  <!-- Script de chargement des composants (header & footer) -->
+  <script src="/assets/js/components.js"></script>
+
+</body>
+</html>

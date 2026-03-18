@@ -1,0 +1,30 @@
+<!-- ============================================================
+     includes/footer.html — Pied de page commun à toutes les pages
+     Chargé dynamiquement via assets/js/components.js
+     ============================================================ -->
+<footer role="contentinfo">
+  <div class="container">
+
+    <!-- Liens rapides -->
+    <ul class="footer__links">
+      <li><a href="/index.html">Accueil</a></li>
+      <li><a href="/parcours/index.html">Parcours académique</a></li>
+      <li><a href="/experience/index.html">Expérience pro</a></li>
+      <li><a href="/projets/index.html">Projets</a></li>
+      <li><a href="/contact/index.html">Me contacter</a></li>
+    </ul>
+
+    <!-- Copyright -->
+    <p class="footer__copy">
+      &copy; <span id="footer-year"></span> Pierre &mdash; Portfolio d'ingénieur.
+      Tous droits réservés.
+    </p>
+
+  </div>
+</footer>
+
+<!-- Mise à jour automatique de l'année -->
+<script>
+  const el = document.getElementById('footer-year');
+  if (el) { el.textContent = new Date().getFullYear(); }
+</script>
