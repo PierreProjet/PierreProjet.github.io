@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- ============================================================
+       index.html — Page d'accueil du portfolio d'ingénieur
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Pierre, ingénieur passionné par les nouvelles technologies." />
+
+  <title>Accueil — Portfolio de Pierre</title>
+
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ── Point d'injection du header (chargé par components.js) ── -->
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════════
+         SECTION HÉRO — Bandeau bleu de présentation
+         ══════════════════════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="container">
+
+        <!-- Avatar / initiales -->
+        <div class="avatar">
+          <span class="avatar__initials">P</span>
+        </div>
+
+        <h1 class="hero__title">Bonjour, je suis Pierre</h1>
+        <p class="hero__subtitle">Ingénieur en informatique &bull; Passionné par l'innovation technologique</p>
+
+        <!-- Boutons d'action -->
+        <div class="hero__actions">
+          <a href="/projets/index.html" class="btn btn--primary">Voir mes projets</a>
+          <a href="/contact/index.html" class="btn btn--outline">Me contacter</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         SECTION À PROPOS — Fond blanc, texte noir
+         ══════════════════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+
+        <h2 class="section__title">À propos de moi</h2>
+        <!-- Ligne décorative bleue -->
+        <div class="section-divider"></div>
+        <p class="section__intro">
+          Diplômé en génie informatique, je combine rigueur technique et sens de l'innovation
+          pour concevoir des solutions fiables et performantes.
+        </p>
+
+        <!-- Grille de points forts -->
+        <div class="cards-grid">
+
+          <div class="card">
+            <div class="card__accent"></div>
+            <h3 class="card__title">Formation d'excellence</h3>
+            <p class="card__text">
+              Master en ingénierie informatique obtenu avec mention, avec des spécialisations
+              en développement logiciel et systèmes embarqués.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card__accent"></div>
+            <h3 class="card__title">Expérience terrain</h3>
+            <p class="card__text">
+              Stages et projets en entreprise qui m'ont permis d'acquérir une expérience
+              concrète dans des environnements professionnels exigeants.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card__accent"></div>
+            <h3 class="card__title">Projets innovants</h3>
+            <p class="card__text">
+              De l'idée au déploiement, j'ai mené plusieurs projets techniques ambitieux
+              en autonomie et en équipe.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         SECTION COMPÉTENCES — Fond gris clair, texte noir
+         ══════════════════════════════════════════════════════════ -->
+    <section class="section section--gray">
+      <div class="container">
+
+        <h2 class="section__title">Compétences principales</h2>
+        <div class="section-divider"></div>
+        <p class="section__intro">Un aperçu de mes technologies et savoir-faire.</p>
+
+        <div class="skills-grid">
+          <!-- Colonne 1 -->
+          <div>
+            <div class="skill">
+              <div class="skill__name"><span>Python</span><span>90%</span></div>
+              <div class="skill__bar"><div class="skill__fill" style="width:90%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__name"><span>Java / Spring</span><span>80%</span></div>
+              <div class="skill__bar"><div class="skill__fill" style="width:80%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__name"><span>JavaScript / React</span><span>75%</span></div>
+              <div class="skill__bar"><div class="skill__fill" style="width:75%"></div></div>
+            </div>
+          </div>
+
+          <!-- Colonne 2 -->
+          <div>
+            <div class="skill">
+              <div class="skill__name"><span>SQL / PostgreSQL</span><span>85%</span></div>
+              <div class="skill__bar"><div class="skill__fill" style="width:85%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__name"><span>Docker / Kubernetes</span><span>70%</span></div>
+              <div class="skill__bar"><div class="skill__fill" style="width:70%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__name"><span>Git / CI-CD</span><span>85%</span></div>
+              <div class="skill__bar"><div class="skill__fill" style="width:85%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         SECTION APPEL À L'ACTION — Lien vers contact
+         ══════════════════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container" style="text-align:center;">
+        <h2 class="section__title">Travaillons ensemble</h2>
+        <div class="section-divider"></div>
+        <p class="section__intro">
+          Vous avez un projet ou une opportunité à me proposer ?
+          N'hésitez pas à me contacter, je serai ravi d'échanger.
+        </p>
+        <a href="/contact/index.html" class="btn btn--blue">Prendre contact</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Point d'injection du footer (chargé par components.js) ── -->
+  <div id="site-footer"></div>
+
+  <!-- Script de chargement des composants (header & footer) -->
+  <script src="/assets/js/components.js"></script>
+
+</body>
+</html>
