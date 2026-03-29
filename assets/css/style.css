@@ -344,8 +344,12 @@ a:hover {
    TIMELINE (parcours & expérience)
    ========================================================== */
 .timeline {
+  --timeline-content-offset: 2.5rem;
+  --timeline-axis-x: 10px;
+  --timeline-dot-size: 14px;
+  --timeline-dot-left: calc(var(--timeline-axis-x) - var(--timeline-content-offset) - 7px);
   position: relative;
-  padding-left: 2.5rem;
+  padding-left: var(--timeline-content-offset);
   margin-top: 2rem;
 }
 
@@ -353,7 +357,8 @@ a:hover {
 .timeline::before {
   content: '';
   position: absolute;
-  left: 10px;
+  left: var(--timeline-axis-x);
+  transform: translateX(-50%);
   top: 0;
   bottom: 0;
   width: 3px;
@@ -370,10 +375,10 @@ a:hover {
 .timeline__item::before {
   content: '';
   position: absolute;
-  left: -2.1rem;
+  left: var(--timeline-dot-left);
   top: 0.35rem;
-  width: 14px;
-  height: 14px;
+  width: var(--timeline-dot-size);
+  height: var(--timeline-dot-size);
   border-radius: 50%;
   background-color: var(--color-white);
   border: 3px solid var(--color-primary);
@@ -450,7 +455,7 @@ a:hover {
 }
 
 .company-logo--framatome {
-  --logo-scale: 4;
+  --logo-scale: 3;
 }
 
 .company-logo--telecom {
@@ -458,7 +463,11 @@ a:hover {
 }
 
 .company-logo--dassault {
-  --logo-scale: 2;
+  --logo-scale: 3;
+}
+
+.company-logo--inspire {
+  --logo-scale: 2.5;
 }
 
 /* ==========================================================
@@ -671,6 +680,15 @@ footer a:hover {
 }
 
 /* ==========================================================
+   RESPONSIVE — Largeur desktop
+   ========================================================== */
+@media (min-width: 769px) {
+  .container {
+    max-width: 90vw;
+  }
+}
+
+/* ==========================================================
    RESPONSIVE — Navigation mobile
    ========================================================== */
 @media (max-width: 768px) {
@@ -710,7 +728,7 @@ footer a:hover {
   }
 
   .timeline {
-    padding-left: 2rem;
+    --timeline-content-offset: 2rem;
   }
 
   .timeline__org {
@@ -724,8 +742,8 @@ footer a:hover {
   }
 
   .company-logo {
-    width: calc(40px * var(--logo-scale));
-    height: calc(24px * var(--logo-scale));
+    width: calc(40px * 3);
+    height: calc(24px * 3);
     padding: 0.25rem 0.35rem;
     border-radius: 6px;
   }
