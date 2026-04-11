@@ -6,7 +6,7 @@
        ============================================================ -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Expérience professionnelle de Pierre Mertz : alternance Framatome, projets drones et responsabilités étudiantes." />
+  <meta name="description" content="Expérience professionnelle de Pierre Mertz : alternance Framatome, auto-entreprise XPERT et responsabilités de gestion de projet." />
 
   <title>Expérience professionnelle — Portfolio de Pierre Mertz</title>
 
@@ -39,142 +39,198 @@
         <h2 class="section__title">Mon parcours</h2>
         <div class="section-divider"></div>
 
-        <!-- Timeline verticale avec ligne bleue -->
-        <div class="timeline">
+        <!-- Timeline moderne avec cartes réversibles -->
+        <div class="timeline timeline--experience">
 
           <!-- Poste 1 : Framatome -->
-          <div class="timeline__item">
-            <p class="timeline__date">09/2025 — 08/2026</p>
-            <h3 class="timeline__title">Ingénieur en électronique, télécoms et logiciel (alternance)</h3>
-            <div class="timeline__org">
-              <p class="timeline__subtitle">Framatome &mdash; Grenoble, France</p>
-              <div class="timeline__logos">
-                <div class="company-logo company-logo--framatome">
-                  <img src="/assets/images/Framatome-logo.png" alt="Logo Framatome" loading="lazy" />
+          <div class="timeline__item exp-card" tabindex="0" role="button" aria-label="Basculer la carte Framatome" aria-pressed="false">
+            <div class="exp-card__inner">
+              <article class="exp-card__face exp-card__face--front">
+                <div class="exp-card__head">
+                  <p class="timeline__date">09/2025 — 08/2026</p>
+                  <span class="exp-card__status exp-card__status--alternance">Alternance</span>
                 </div>
-              </div>
-            </div>
-            <p class="timeline__desc">
-              <ul>
-              <li>Étude d'architecture et spécification d'une technologie de localisation RTLS en UWB le cadre du projet CILIS.</li>
-              <li>Analyse, interprétation et optimisation d'une interface Python dédiée au traitement de données issues d'une solution UWB TWR de IIDRE, avec production d'un rapport d'essais.</li>
-              <li>Développement d'un prototype de pipeline de données et contribution à la conception du script d'automatisation du rapport HTML d'obsolescence des composants dans le cadre du projet Taiwan.</li>
-              </ul>
-            </p>
-            <p class="timeline__desc" style="margin-top:0.7rem; color:var(--color-text-muted);">
-              Durant mon alternance chez Framatome, j'ai eu l'opportunité de travailler sur deux projets, TAIWAN et CILIS. Ces expériences m'ont permis de renforcer mes compétences en électronique, télécoms et logiciel, tout en contribuant à des initiatives stratégiques et à forte valeurs ajoutées pour l'entreprise.
-            </p>
-            <div class="tag-list">
-              <span class="tag">Spécification Eléctronique</span>
-              <span class="tag">Protocole de synchronisation</span>
-              <span class="tag">Horloge</span>
-              <span class="tag">Système temps réel</span>
-              <span class="tag">Système de communication sans fil</span>
-              <span class="tag">Infrastrucure réseau</span>
-              <span class="tag">Python, C, C++, HTML, CSS, JavaScript, JSON</span>
-              <span class="tag">C, #C++</span>
+                <h3 class="timeline__title">Ingénieur en électronique, télécoms et logiciel (alternance)</h3>
+                <div class="timeline__org">
+                  <p class="timeline__subtitle">Framatome &mdash; Grenoble, France</p>
+                  <div class="timeline__logos">
+                    <div class="company-logo company-logo--framatome">
+                      <img src="/assets/images/Framatome-logo.png" alt="Logo Framatome" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <p class="timeline__desc">
+                  Alternance orientée électronique, télécommunications et logiciel sur les projets CILIS et TAIWAN,
+                  avec une approche prototype et automatisation de la donnée.
+                </p>
+                <button class="exp-card__toggle" type="button" data-flip>Voir le détail</button>
+              </article>
+
+              <article class="exp-card__face exp-card__face--back">
+                <p class="timeline__date">Framatome — Missions clés</p>
+                <ul class="timeline__list">
+                  <li>Étude d'architecture et spécification d'une technologie RTLS en UWB dans le cadre du projet CILIS.</li>
+                  <li>Analyse, interprétation et optimisation d'une interface Python de traitement de données UWB TWR (IIDRE), avec rapport d'essais.</li>
+                  <li>Développement d'un prototype de pipeline de données et contribution à l'automatisation du rapport HTML d'obsolescence composants (projet TAIWAN).</li>
+                </ul>
+                <p class="timeline__desc timeline__desc--hint">
+                  Travail sur des initiatives stratégiques à forte valeur ajoutée pour l'entreprise.
+                </p>
+                <div class="tag-list">
+                  <span class="tag">Spécification électronique</span>
+                  <span class="tag">Synchronisation</span>
+                  <span class="tag">Systèmes temps réel</span>
+                  <span class="tag">Communication sans fil</span>
+                  <span class="tag">Infrastructure réseau</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">C / C++</span>
+                  <span class="tag">HTML / CSS / JavaScript</span>
+                </div>
+                <button class="exp-card__toggle" type="button" data-flip>Revenir au résumé</button>
+              </article>
             </div>
           </div>
 
           <!-- Poste 2 : Chef de projet étudiant -->
-          <div class="timeline__item">
-            <p class="timeline__date">03/2025 — 06/2025</p>
-            <h3 class="timeline__title">Système anti-leurre pour drones (Chef de projet étudiant)</h3>
-            <div class="timeline__org">
-              <p class="timeline__subtitle">Institut Mines-Télécom / Roméo Sierra Recherche &mdash; Saint-Étienne, France</p>
-              <div class="timeline__logos">
-                <div class="company-logo company-logo--telecom">
-                  <img src="/assets/images/TSE-logo.png" alt="Logo Institut Mines-Télécom" loading="lazy" />
+          <div class="timeline__item exp-card" tabindex="0" role="button" aria-label="Basculer la carte projet anti-leurre" aria-pressed="false">
+            <div class="exp-card__inner">
+              <article class="exp-card__face exp-card__face--front">
+                <div class="exp-card__head">
+                  <p class="timeline__date">03/2025 — 06/2025</p>
+                  <span class="exp-card__status exp-card__status--projet">Projet</span>
                 </div>
-                <div class="company-logo company-logo--dassault">
-                  <img src="/assets/images/Dassault-logo.png" alt="Logo Dassault Aviation" loading="lazy" />
+                <h3 class="timeline__title">Système anti-leurre pour drones (Chef de projet étudiant)</h3>
+                <div class="timeline__org">
+                  <p class="timeline__subtitle">Institut Mines-Télécom / Roméo Sierra Recherche &mdash; Saint-Étienne, France</p>
+                  <div class="timeline__logos timeline__logos--duo">
+                    <div class="company-logo company-logo--telecom">
+                      <img src="/assets/images/TSE-logo.png" alt="Logo Institut Mines-Télécom" loading="lazy" />
+                    </div>
+                    <div class="company-logo company-logo--dassault">
+                      <img src="/assets/images/Dassault-logo.png" alt="Logo Dassault Aviation" loading="lazy" />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <p class="timeline__desc">
-              <ul>
-                <li>Mise en place d'une simulation (PoC) de géolocalisation de leurre par TDOA GNSS</li>
-                <li>Recherches menées sur le traitement des signaux GNSS et sur les contre-mesures associées.</li>
-                <li>Encadrement d'une équipe chargée de concevoir un dispositif anti-leurrage pour drones, en partenariat avec un ancien cadre de Dassault Aviation.</li>
-              </ul>
-            </p>
-            <p class="timeline__desc" style="margin-top:0.7rem; color:var(--color-text-muted);">
-              Ce projet m'a permis de développer des compétences en recherche appliquée dans le domaine de la défense aérienne et en gestion de projet, en encadrement d'équipe de 4 personnes sur 3 semaines.
-            </p>
-            <div class="tag-list">
-              <span class="tag">Drones</span>
-              <span class="tag">GNSS</span>
-              <span class="tag">TDOA</span>
-              <span class="tag">Géolocalisation</span>
-              <span class="tag">Simulation</span>
-              <span class="tag">Prototypage</span>
-              <span class="tag">Gestion d'équipe</span>
-              <span class="tag">Gestion de projet</span>
-              <span class="tag">Innovation</span>
+                <p class="timeline__desc">
+                  Conduite d'un PoC de géolocalisation anti-leurre, avec pilotage d'équipe et recherche appliquée
+                  sur les signaux GNSS et les contre-mesures.
+                </p>
+                <button class="exp-card__toggle" type="button" data-flip>Voir le détail</button>
+              </article>
 
+              <article class="exp-card__face exp-card__face--back">
+                <p class="timeline__date">Projet anti-leurre — Missions clés</p>
+                <ul class="timeline__list">
+                  <li>Mise en place d'une simulation (PoC) de géolocalisation de leurre par TDOA GNSS.</li>
+                  <li>Recherches sur le traitement des signaux GNSS et les contre-mesures associées.</li>
+                  <li>Encadrement d'une équipe de 4 personnes pour concevoir un dispositif anti-leurrage pour drones.</li>
+                </ul>
+                <p class="timeline__desc timeline__desc--hint">
+                  Compétences renforcées en recherche appliquée et en gestion de projet sous contrainte de temps.
+                </p>
+                <div class="tag-list">
+                  <span class="tag">Drones</span>
+                  <span class="tag">GNSS</span>
+                  <span class="tag">TDOA</span>
+                  <span class="tag">Géolocalisation</span>
+                  <span class="tag">Simulation</span>
+                  <span class="tag">Gestion d'équipe</span>
+                  <span class="tag">Innovation</span>
+                </div>
+                <button class="exp-card__toggle" type="button" data-flip>Revenir au résumé</button>
+              </article>
             </div>
           </div>
 
-          <!-- Poste 3 : Projet prise de contrôle d'un drone via UART -->
-          <div class="timeline__item">
-            <p class="timeline__date">10/2024 — 02/2025</p>
-            <h3 class="timeline__title">Prise de contrôle d'un drone via UART</h3>
-            <div class="timeline__org">
-              <p class="timeline__subtitle">Institut Mines-Télécom &mdash; Saint-Étienne, France</p>
-              <div class="timeline__logos">
-                <div class="company-logo company-logo--telecom">
-                  <img src="/assets/images/TSE-logo.png" alt="Logo Institut Mines-Télécom" loading="lazy" />
+          <!-- Poste 3 : Inspire -->
+          <div class="timeline__item exp-card" tabindex="0" role="button" aria-label="Basculer la carte Inspire" aria-pressed="false">
+            <div class="exp-card__inner">
+              <article class="exp-card__face exp-card__face--front">
+                <div class="exp-card__head">
+                  <p class="timeline__date">04/2024 — 04/2025</p>
+                  <span class="exp-card__status exp-card__status--conseil">Conseil</span>
                 </div>
-              </div>
-            </div>
-            <p class="timeline__desc">
-              <ul>
-                <li>Implémentation de boucles de rétroaction destinées au vol autonome pour détourner le drone.</li>
-                <li>Récupération et traitement des données provenant des capteurs du drone pour permettre le vol autonome.</li>
-                <li>Conception et développement d'un système de prise de contrôle de drone via UART, incluant une interface homme-machine (IHM) temps réel.</li>
-              </ul>
-            </p>
-            <p class="timeline__desc" style="margin-top:0.7rem; color:var(--color-text-muted);">
-              Projet réalisé dans le cadre d'un cours de spécialisation en électronique embarquée.
-            </p>
-            <div class="tag-list">
-              <span class="tag">UART / SPI</span>
-              <span class="tag">Bare Metal</span>
-              <span class="tag">Systèmes embarqués</span>
-              <span class="tag">Asservissement</span>
-              <span class="tag">Drones</span>
+                <h3 class="timeline__title">Chargé d'affaire</h3>
+                <div class="timeline__org">
+                  <p class="timeline__subtitle">Inspire (Junior Engineering Consultancy) &mdash; Saint-Étienne, France</p>
+                  <div class="timeline__logos">
+                    <div class="company-logo company-logo--inspire">
+                      <img src="/assets/images/Inspire-logo.png" alt="Logo Inspire" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+                <p class="timeline__desc">
+                  Expérience orientée relation client et développement commercial, avec cadrage des besoins
+                  et propositions techniques adaptées.
+                </p>
+                <button class="exp-card__toggle" type="button" data-flip>Voir le détail</button>
+              </article>
+
+              <article class="exp-card__face exp-card__face--back">
+                <p class="timeline__date">Inspire — Missions clés</p>
+                <ul class="timeline__list">
+                  <li>Suivi de missions, responsabilités commerciales, livrables et retombées pour la structure.</li>
+                  <li>Participation à la gestion d'affaires, avec interactions clients et coordination interne.</li>
+                  <li>Élaboration de propositions commerciales et présentation de solutions techniques.</li>
+                </ul>
+                <p class="timeline__desc timeline__desc--hint">
+                  Expérience structurante pour consolider le savoir-être et le savoir-faire en contexte professionnel.
+                </p>
+                <div class="tag-list">
+                  <span class="tag">Relation client</span>
+                  <span class="tag">Coordination</span>
+                  <span class="tag">Proposition commerciale</span>
+                  <span class="tag">Présentation technique</span>
+                  <span class="tag">Gestion de projet</span>
+                  <span class="tag">Gestion d'affaire</span>
+                </div>
+                <button class="exp-card__toggle" type="button" data-flip>Revenir au résumé</button>
+              </article>
             </div>
           </div>
 
-          <!-- Poste 4 : Inspire -->
-          <div class="timeline__item">
-            <p class="timeline__date">04/2024 — 04/2025</p>
-            <h3 class="timeline__title">Chargé d'affaire</h3>
-            <div class="timeline__org">
-              <p class="timeline__subtitle">Inspire (Junior Engineering Consultancy) &mdash; Saint-Étienne, France</p>
-              <div class="timeline__logos">
-                <div class="company-logo company-logo--inspire">
-                  <img src="/assets/images/Inspire-logo.png" alt="Logo Inspire" loading="lazy" />
+          <!-- Poste 4 : Auto-entreprise XPERT -->
+          <div class="timeline__item exp-card" tabindex="0" role="button" aria-label="Basculer la carte auto-entreprise XPERT" aria-pressed="false">
+            <div class="exp-card__inner">
+              <article class="exp-card__face exp-card__face--front">
+                <div class="exp-card__head">
+                  <p class="timeline__date">01/2024 — 12/2025</p>
+                  <span class="exp-card__status exp-card__status--entreprise">Entrepreneuriat</span>
                 </div>
-              </div>
-            </div>
-            <p class="timeline__desc">
-              <ul>
-                <li>Suivi de missions, responsabilités commerciales, livrables produits et retombées pour la structure.</li>
-                <li>Participation aux activités de gestion d'affaires, avec interactions clients et coordination des actions en interne.</li>
-                <li>Élaboration de propositions commerciales et présentation de solutions techniques aux clients.</li>
-              </ul>
-            </p>
-            <p class="timeline__desc" style="margin-top:0.7rem; color:var(--color-text-muted);">
-              Cette expérience m'a permeis de challenger mes connaissances pour en faire des compétences. L'intéraction avec les clients et le monde professionnel m'a permis de développer mon savoir-être et savoir-faire, grâce à une approche pragmatique et une communication efficace.
-            </p>
-            <div class="tag-list">
-              <span class="tag">Relation client</span>
-              <span class="tag">Coordination</span>
-              <span class="tag">Proposition commerciale</span>
-              <span class="tag">Présentation technique</span>
-              <span class="tag">Gestion de projet</span>
-              <span class="tag">Gestion d'affaire</span>
+                <h3 class="timeline__title">Fondateur — Auto-entreprise XPERT</h3>
+                <div class="timeline__org">
+                  <p class="timeline__subtitle">XPERT &mdash; Saint-Étienne, France</p>
+                </div>
+                <p class="timeline__desc">
+                  Lancement et développement d'une activité indépendante, d'abord centrée sur les cours particuliers,
+                  puis élargie à la gestion événementielle et au service sur événements traiteur.
+                </p>
+                <button class="exp-card__toggle" type="button" data-flip>Voir le détail</button>
+              </article>
+
+              <article class="exp-card__face exp-card__face--back">
+                <p class="timeline__date">XPERT — Missions clés</p>
+                <ul class="timeline__list">
+                  <li>Démarrage de l'activité avec des cours particuliers et accompagnement personnalisé.</li>
+                  <li>Diversification vers la gestion événementielle et le service lors d'événements traiteur.</li>
+                  <li>Coordination opérationnelle, relation client et fiabilité d'exécution sur le terrain.</li>
+                </ul>
+                <p class="timeline__desc timeline__desc--hint">
+                  Repères registre public : entrepreneur individuel (micro-entreprise), code APE 82.30Z,
+                  création en 01/2024 et radiation en fin 12/2025 (greffe de Saint-Étienne).
+                </p>
+                <div class="tag-list">
+                  <span class="tag">Cours particuliers</span>
+                  <span class="tag">Gestion événementielle</span>
+                  <span class="tag">Service traiteur</span>
+                  <span class="tag">Coordination terrain</span>
+                  <span class="tag">Relation client</span>
+                  <span class="tag">Richard Traiteur</span>
+                  <span class="tag">Garat Traiteur</span>
+                  <span class="tag">APE 82.30Z</span>
+                </div>
+                <button class="exp-card__toggle" type="button" data-flip>Revenir au résumé</button>
+              </article>
             </div>
           </div>
 
@@ -236,19 +292,19 @@
         <div class="section-divider"></div>
         <p class="section__intro">Langages, environnements et outils utilisés sur lors de mes expérences</p>
 
-        <div class="skills-grid">
+        <div class="skills-grid skills-grid--experience">
           <div>
             <div class="skill">
-              <div class="skill__name"><span>Assembly / C / C++ / VHDL</span><span>85%</span></div>
-              <div class="skill__bar"><div class="skill__fill" style="width:85%"></div></div>
+              <div class="skill__name"><span>Assembly / C / C++ / VHDL</span><span>60%</span></div>
+              <div class="skill__bar"><div class="skill__fill" style="width:60%"></div></div>
             </div>
             <div class="skill">
-              <div class="skill__name"><span>Python</span><span>85%</span></div>
-              <div class="skill__bar"><div class="skill__fill" style="width:85%"></div></div>
-            </div>
-            <div class="skill">
-              <div class="skill__name"><span>HTML / CSS / JavaScript</span><span>70%</span></div>
+              <div class="skill__name"><span>Python</span><span>70%</span></div>
               <div class="skill__bar"><div class="skill__fill" style="width:70%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill__name"><span>HTML / CSS / JavaScript</span><span>65%</span></div>
+              <div class="skill__bar"><div class="skill__fill" style="width:65%"></div></div>
             </div>
           </div>
           <div>
@@ -277,6 +333,54 @@
 
   <!-- Script de chargement des composants (header & footer) -->
   <script src="/assets/js/components.js"></script>
+
+  <!-- Interaction des cartes d'expérience (flip au clic) -->
+  <script>
+    (function () {
+      'use strict';
+
+      const cards = Array.from(document.querySelectorAll('.exp-card'));
+      if (!cards.length) return;
+
+      function toggleCard(card) {
+        const shouldOpen = !card.classList.contains('is-flipped');
+
+        cards.forEach(function (otherCard) {
+          if (otherCard === card) return;
+          otherCard.classList.remove('is-flipped');
+          otherCard.setAttribute('aria-pressed', 'false');
+        });
+
+        card.classList.toggle('is-flipped', shouldOpen);
+        card.setAttribute('aria-pressed', shouldOpen ? 'true' : 'false');
+      }
+
+      document.querySelectorAll('.timeline--experience .tag').forEach(function (tag) {
+        tag.title = tag.textContent.trim();
+      });
+
+      cards.forEach(function (card) {
+        card.addEventListener('click', function (event) {
+          if (event.target.closest('[data-flip]') || event.target.closest('a')) return;
+          toggleCard(card);
+        });
+
+        card.addEventListener('keydown', function (event) {
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+          event.preventDefault();
+          toggleCard(card);
+        });
+
+        const toggles = card.querySelectorAll('[data-flip]');
+        toggles.forEach(function (button) {
+          button.addEventListener('click', function (event) {
+            event.stopPropagation();
+            toggleCard(card);
+          });
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>
