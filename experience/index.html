@@ -342,6 +342,23 @@
       const cards = Array.from(document.querySelectorAll('.exp-card'));
       if (!cards.length) return;
 
+      function syncCardHeight(card) {
+        const inner = card.querySelector('.exp-card__inner');
+        const front = card.querySelector('.exp-card__face--front');
+        const back = card.querySelector('.exp-card__face--back');
+        if (!inner || !front || !back) return;
+
+        const activeFace = card.classList.contains('is-flipped') ? back : front;
+        const nextHeight = Math.ceil(activeFace.offsetHeight || activeFace.scrollHeight);
+        if (nextHeight > 0) {
+          inner.style.height = nextHeight + 'px';
+        }
+      }
+
+      function syncAllCardHeights() {
+        cards.forEach(syncCardHeight);
+      }
+
       function toggleCard(card) {
         const shouldOpen = !card.classList.contains('is-flipped');
 
@@ -349,10 +366,15 @@
           if (otherCard === card) return;
           otherCard.classList.remove('is-flipped');
           otherCard.setAttribute('aria-pressed', 'false');
+          syncCardHeight(otherCard);
         });
 
         card.classList.toggle('is-flipped', shouldOpen);
         card.setAttribute('aria-pressed', shouldOpen ? 'true' : 'false');
+
+        requestAnimationFrame(function () {
+          syncCardHeight(card);
+        });
       }
 
       document.querySelectorAll('.timeline--experience .tag').forEach(function (tag) {
@@ -379,6 +401,28 @@
           });
         });
       });
+
+      const resizeObserver = window.ResizeObserver
+        ? new ResizeObserver(function (entries) {
+            entries.forEach(function (entry) {
+              const card = entry.target.closest('.exp-card');
+              if (card) syncCardHeight(card);
+            });
+          })
+        : null;
+
+      if (resizeObserver) {
+        cards.forEach(function (card) {
+          const front = card.querySelector('.exp-card__face--front');
+          const back = card.querySelector('.exp-card__face--back');
+          if (front) resizeObserver.observe(front);
+          if (back) resizeObserver.observe(back);
+        });
+      }
+
+      syncAllCardHeights();
+      window.addEventListener('load', syncAllCardHeights);
+      window.addEventListener('resize', syncAllCardHeights);
     })();
   </script>
 
