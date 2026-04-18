@@ -74,9 +74,25 @@
             <h2 class="section__title" style="text-align:left;">Envoyez-moi un message</h2>
             <div class="section-divider" style="margin:0.6rem 0 1.5rem;"></div>
 
-            <!-- Formulaire statique (GitHub Pages ne supporte pas le back-end)
-                 Pour un vrai envoi, connectez-le à Formspree ou Netlify Forms. -->
-            <form id="contact-form" action="#" method="post" novalidate>
+            <!-- Formulaire connecté à FormSubmit (compatible GitHub Pages)
+                 Le premier envoi demandera une confirmation d'activation par e-mail. -->
+            <form id="contact-form" action="https://formsubmit.co/mertzpierre.pro@gmail.com" method="post">
+
+              <!-- Configuration FormSubmit -->
+              <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://pierreprojet.github.io/contact/index.html?sent=1" />
+
+              <!-- Honeypot anti-spam -->
+              <input
+                type="text"
+                name="_honey"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+                style="position:absolute; left:-9999px;"
+              />
 
               <!-- Nom -->
               <div class="form-group">
@@ -111,7 +127,7 @@
                   type="text"
                   id="subject"
                   name="subject"
-                  placeholder="Opportunité de stage / Collaboration..."
+                  placeholder="Opportunité / Collaboration..."
                 />
               </div>
 
