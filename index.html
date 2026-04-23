@@ -10,6 +10,17 @@
 
   <title>Accueil — Portfolio de Pierre Mertz</title>
 
+  <script>
+    // Toggle unique: true = index_bis becomes the default home page.
+    // To revert quickly after school test, set this flag to false.
+    (function () {
+      var USE_INDEX_BIS_AS_HOME = true;
+      if (USE_INDEX_BIS_AS_HOME) {
+        window.location.replace('/index_bis.html');
+      }
+    })();
+  </script>
+
   <!-- Feuille de style principale -->
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
