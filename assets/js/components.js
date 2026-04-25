@@ -40,20 +40,30 @@
   /* ── Marque le lien actif dans la navigation ── */
 
   /**
+   * Normalise un chemin pour comparer correctement les routes
+   * (/, /index.html, /section et /section/index.html).
+   * @param {string} pathname
+   * @returns {string}
+   */
+  function normalizePath(pathname) {
+    var path = pathname || '/';
+    path = path.replace(/\/+/g, '/');
+    path = path.replace(/\/$/, '');
+    path = path.replace(/\/index\.html$/, '');
+    return path || '/';
+  }
+
+  /**
    * Compare le chemin courant aux liens de la navbar et ajoute
    * la classe "active" au lien correspondant.
    */
   function setActiveNav() {
-    const currentPath = window.location.pathname;
+    const currentPath = normalizePath(window.location.pathname);
     const links = document.querySelectorAll('.navbar__nav a');
 
     links.forEach(function (link) {
-      var linkPath = new URL(link.href).pathname;
-      /* Correspondance exacte OU correspondance du dossier courant */
-      if (
-        linkPath === currentPath ||
-        (currentPath !== '/' && linkPath !== '/' && currentPath.startsWith(linkPath.replace(/\/index\.html$/, '')))
-      ) {
+      var linkPath = normalizePath(new URL(link.href).pathname);
+      if (linkPath === currentPath || (linkPath !== '/' && currentPath.startsWith(linkPath + '/'))) {
         link.classList.add('active');
         link.setAttribute('aria-current', 'page');
       }
