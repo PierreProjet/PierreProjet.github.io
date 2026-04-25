@@ -26,6 +26,10 @@
 
 <!-- Mise à jour automatique de l'année -->
 <script>
-  const el = document.getElementById('footer-year');
-  if (el) { el.textContent = new Date().getFullYear(); }
+  (function () {
+    const yearEl = document.getElementById('footer-year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  })();
 </script>
