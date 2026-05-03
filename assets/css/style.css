@@ -949,6 +949,148 @@ footer a:hover {
 }
 
 /* ==========================================================
+   PAGE MENTIONS LEGALES
+   ========================================================== */
+.legal-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.legal-block {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.legal-block h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  color: var(--color-text);
+}
+
+.legal-block p {
+  margin-bottom: 0.5rem;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.legal-block p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-block ul {
+  margin: 0.45rem 0 0 1.1rem;
+  color: var(--color-text-muted);
+}
+
+.legal-block li {
+  margin-bottom: 0.3rem;
+}
+
+/* ==========================================================
+   TARTEAUCITRON (cookies)
+   ========================================================== */
+#tarteaucitronRoot {
+  font-family: var(--font-base);
+  color: var(--color-text);
+}
+
+#tarteaucitronAlertBig {
+  background-color: var(--color-white) !important;
+  border-top: 1px solid var(--color-border) !important;
+  box-shadow: 0 -10px 30px rgba(13, 71, 161, 0.12) !important;
+}
+
+#tarteaucitronAlertBig #tarteaucitronAlertBigContent {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.6rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+#tarteaucitronAlertBig #tarteaucitronDisclaimerAlert {
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+#tarteaucitronAlertBig a {
+  color: var(--color-primary);
+}
+
+#tarteaucitronAlertBig a:hover {
+  color: var(--color-primary-dk);
+}
+
+#tarteaucitronAlertBig button,
+#tarteaucitronAlertBig .tarteaucitronCTA {
+  border-radius: 999px !important;
+  padding: 0.35rem 0.9rem !important;
+  font-weight: 600;
+  font-size: 0.82rem;
+  border: 1px solid transparent;
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+}
+
+#tarteaucitronAcceptAll {
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
+  border-color: var(--color-primary) !important;
+}
+
+#tarteaucitronAcceptAll:hover {
+  background-color: var(--color-primary-dk) !important;
+  border-color: var(--color-primary-dk) !important;
+}
+
+#tarteaucitronDenyAll {
+  background-color: transparent !important;
+  color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+#tarteaucitronDenyAll:hover {
+  background-color: rgba(21, 101, 192, 0.12) !important;
+}
+
+#tarteaucitronPersonalize {
+  background-color: rgba(21, 101, 192, 0.08) !important;
+  color: var(--color-primary-dk) !important;
+  border-color: rgba(21, 101, 192, 0.3) !important;
+}
+
+#tarteaucitronPersonalize:hover {
+  background-color: rgba(21, 101, 192, 0.18) !important;
+}
+
+#tarteaucitronIcon {
+  background: var(--color-white) !important;
+  border: 1px solid rgba(21, 101, 192, 0.25) !important;
+  border-radius: 999px !important;
+  box-shadow: 0 6px 18px rgba(13, 71, 161, 0.18) !important;
+}
+
+#tarteaucitron {
+  font-family: var(--font-base) !important;
+  color: var(--color-text) !important;
+}
+
+#tarteaucitron .tarteaucitronTitle {
+  color: var(--color-text) !important;
+}
+
+#tarteaucitron #tarteaucitronServices .tarteaucitronLine {
+  border-color: var(--color-border) !important;
+}
+
+/* ==========================================================
    PROFIL AVATAR (cercle bleu)
    ========================================================== */
 .avatar {
