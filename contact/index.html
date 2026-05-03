@@ -111,6 +111,8 @@
       font-weight: 500;
     }
   </style>
+  <!-- Tarteaucitron CSS personnalisé -->
+  <link rel="stylesheet" href="/assets/css/tarteaucitron-custom.css" />
 </head>
 <body>
 
@@ -355,9 +357,11 @@
   <!-- Script de chargement des composants (header & footer) -->
   <script src="/assets/js/components.js"></script>
 
-  <!-- ── Affichage du message de confirmation après redirection ── -->
-  <script>
-    (function () {
+  <!-- Tarteaucitron - Configuration des services -->
+  <script src="/assets/js/tarteaucitron-services.js"></script>
+
+</body>
+</html>
       'use strict';
 
       const success = document.getElementById('form-success');

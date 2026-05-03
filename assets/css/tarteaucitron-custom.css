@@ -1,0 +1,100 @@
+/* ============================================================
+   Tarteaucitron Custom Styling
+   Adapte tarteaucitron au design du site
+   ============================================================ */
+
+/* Boutons - couleur bleue du site */
+.tarteaucitron-magic-block button,
+#tarteaucitronRoot .tarteaucitronCTAButton,
+#tarteaucitronRoot button.tarteaucitronCTAButton {
+    background-color: #1565C0 !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-weight: 600;
+    transition: background-color 0.25s ease;
+}
+
+.tarteaucitron-magic-block button:hover,
+#tarteaucitronRoot .tarteaucitronCTAButton:hover,
+#tarteaucitronRoot button.tarteaucitronCTAButton:hover {
+    background-color: #0D47A1 !important;
+}
+
+/* Bouton d'acceptation */
+#tarteaucitronRoot #tarteaucitronAllowAll {
+    background-color: #1565C0 !important;
+    color: #ffffff !important;
+}
+
+#tarteaucitronRoot #tarteaucitronAllowAll:hover {
+    background-color: #0D47A1 !important;
+}
+
+/* Bouton de refus */
+#tarteaucitronRoot #tarteaucitronDenyAll {
+    background-color: #6c757d !important;
+    color: #ffffff !important;
+}
+
+#tarteaucitronRoot #tarteaucitronDenyAll:hover {
+    background-color: #5a6268 !important;
+}
+
+/* Bouton fermeture */
+#tarteaucitronRoot button#tarteaucitronCloseAlert {
+    background-color: transparent !important;
+    color: #212529 !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+#tarteaucitronRoot button#tarteaucitronCloseAlert:hover {
+    background-color: #f8f9fa !important;
+}
+
+/* Lien mentions légales */
+#tarteaucitronRoot #tarteaucitronPrivacyUrl {
+    background-color: transparent !important;
+    color: #1565C0 !important;
+    text-decoration: underline;
+}
+
+#tarteaucitronRoot #tarteaucitronPrivacyUrl:hover {
+    color: #0D47A1 !important;
+}
+
+/* Popup background */
+#tarteaucitronRoot #tarteaucitronAlertBig {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+}
+
+/* Services checkboxes - accent bleu */
+#tarteaucitronRoot input[type="checkbox"]:checked {
+    accent-color: #1565C0 !important;
+}
+
+#tarteaucitronRoot input[type="checkbox"]:focus {
+    outline-color: #1565C0 !important;
+}
+
+/* Titre et texte */
+#tarteaucitronRoot h1,
+#tarteaucitronRoot h2,
+#tarteaucitronRoot .tarteaucitronTitle {
+    color: #212529 !important;
+}
+
+#tarteaucitronRoot p,
+#tarteaucitronRoot span,
+#tarteaucitronRoot label {
+    color: #212529 !important;
+}
+
+/* Service toggle switches si présent */
+#tarteaucitronRoot .tarteaucitronServices .tarteaucitronService {
+    border-color: #dee2e6 !important;
+}
+
+#tarteaucitronRoot .tarteaucitronServices .tarteaucitronService:hover {
+    border-color: #1565C0 !important;
+}
